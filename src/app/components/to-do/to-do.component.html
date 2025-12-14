@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-header bg-transparent">
+    <div class="d-flex">
+      <div class="w-75">
+        <input type="text" class="form-control" [(ngModel)]="addTask" />
+      </div>
+      <div class="w-25">
+        <button type="button" class="btn btn-primary" (click)="addNewTask()">
+          <i class="fa fa-plus-circle" aria-hidden="true">Add </i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <ul class="list-group">
+      <li
+        *ngFor="let item of toDo; let index = index; let isFirst = first"
+        class="list-group-item d-flex justify-content-between align-items-start"
+      >
+        <span [ngClass]="isFirst ? 'text-primary' : ''"> {{ item }}</span>
+        <span class="badge bg-danger rounded-pill"
+          ><i class="fa fa-trash" (click)="deleteNewTask(index)"></i
+        ></span>
+      </li>
+    </ul>
+  </div>
+</div>
