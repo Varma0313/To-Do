@@ -1,0 +1,22 @@
+<div class="card">
+  <form [formGroup]="registerForm">
+    <div class="card-body">
+      <label class="form-label">User Name</label>
+      <input type="text" class="form-control" formControlName="username" />
+      <label class="form-label">Email</label>
+      <input type="text" class="form-control" formControlName="email_mobile" />
+      <label class="form-label">Password</label>
+      <input type="password" class="form-control" formControlName="password" />
+    </div>
+    <div class="card-body">
+      <button
+        type="button"
+        class="btn btn-success mt-2"
+        (click)="register()"
+        [disabled]="!registerForm.valid"
+      >
+        Register
+      </button>
+    </div>
+  </form>
+</div>
