@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { ToDoComponent } from './components/to-do/to-do.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -10,11 +10,10 @@ import { RegisterFormComponent } from './components/register-form/register-form.
   standalone: true,
   imports: [
     RouterOutlet,
-    ToDoComponent,
     FormsModule,
     CommonModule,
-    RegisterFormComponent,
     ReactiveFormsModule,
+    RouterLink,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

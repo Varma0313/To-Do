@@ -2,14 +2,17 @@
   <div class="d-flex">
     <div class="w-25">
       <ol class="list-group list-group-numbered">
-        <li class="list-group-item" (click)="loadToDo()">TO DO App</li>
-        <li class="list-group-item" (click)="LoadRegisterForm()">
-          Register Form
+        <li class="list-group-item"><a routerLink="/todo">TO DO</a></li>
+        <li class="list-group-item">
+          <a routerLink="/register">Register Form</a>
+        </li>
+        <li class="list-group-item">
+          <a routerLink="/shopping">Shopping App</a>
         </li>
       </ol>
     </div>
     <div class="w-75">
-      <ng-container *ngIf="this.currentView === 'todo'">
+      <!-- <ng-container *ngIf="this.currentView === 'todo'">
         <app-to-do
           [cardTitle]="setCardTitle"
           (sendToList)="captureEvent($event)"
@@ -18,7 +21,8 @@
 
       <ng-container *ngIf="this.currentView === 'register'">
         <app-register-form>Hello World</app-register-form>
-      </ng-container>
+      </ng-container> -->
+      <router-outlet></router-outlet>
     </div>
   </div>
   <!-- <button class="btn btn-warning mb-2" (click)="showAndHideToDo()">
@@ -27,5 +31,4 @@
 
   <!-- *ngIf="this.ToggleToDoList" -->
   <!--  -->
-  <router-outlet> </router-outlet>
 </div>
