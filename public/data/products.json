@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "discription": "The Samsung Galaxy S24 Ultra is a flagship smartphone that offers top-of-the-line features and performance.",
     "image": "https://www.designinfo.in/wp-content/uploads/2024/01/Samsung-Galaxy-S24-Ultra-256GB-Titanium-Violet-3-optimized.webp",
     "name": "Samsung Galaxy S24 Ultra",
     "availability": true,
@@ -10,6 +11,7 @@
   },
   {
     "id": 2,
+    "discription": "The Samsung Galaxy Z Fold 5 is a foldable smartphone with a large display and advanced features.",
     "image": "https://www.motabhaielectronics.com/cdn/shop/files/1_b823a21b-4bcb-425e-ac58-1e955e308dbc_800x.jpg?v=1707129373",
     "name": "Samsung Galaxy Z Fold 5",
     "availability": true,
@@ -19,6 +21,7 @@
   },
   {
     "id": 3,
+    "discription": "The Samsung Galaxy Z Flip 5 is a stylish foldable smartphone that combines portability with cutting-edge technology.",
     "image": "https://store.mycustomdevice.com/cdn/shop/files/Samsung-Galaxy-Z-Flip-5-5G_3.png?v=1713499250",
     "name": "Samsung Galaxy Z Flip 5",
     "availability": true,
@@ -28,6 +31,7 @@
   },
   {
     "id": 4,
+    "discription": "The iPhone 15 Pro Max is a premium smartphone with a powerful A17 Pro chip and advanced camera system.",
     "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-max-1.jpg",
     "name": "iPhone 15 Pro Max",
     "availability": true,
@@ -37,6 +41,7 @@
   },
   {
     "id": 5,
+    "discription": "The iPhone 15 Pro is a high-end smartphone that offers exceptional performance and photography capabilities.",
     "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg",
     "name": "iPhone 15 Pro",
     "availability": true,
@@ -46,6 +51,7 @@
   },
   {
     "id": 6,
+    "discription": "The iPhone 15 is a premium smartphone that combines sleek design with powerful features.",
     "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-1.jpg",
     "name": "iPhone 15",
     "availability": true,
@@ -55,6 +61,7 @@
   },
   {
     "id": 7,
+    "discription": "The OnePlus 12 is a flagship smartphone that delivers top-tier performance and a smooth user experience.",
     "image": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg",
     "name": "OnePlus 12",
     "availability": true,
@@ -64,6 +71,7 @@
   },
   {
     "id": 8,
+    "discription": " The Google Pixel 8 Pro is a flagship smartphone that offers an exceptional camera experience and smooth performance.",
     "image": "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-8-pro-1.jpg",
     "name": "Google Pixel 8 Pro",
     "availability": true,
@@ -73,6 +81,7 @@
   },
   {
     "id": 9,
+    "discription": "The Xiaomi 14 Ultra is a flagship smartphone that combines cutting-edge technology with premium design.",
     "image": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-14-ultra-1.jpg",
     "name": "Xiaomi 14 Ultra",
     "availability": false,
@@ -82,6 +91,7 @@
   },
   {
     "id": 10,
+    "discription": " The Vivo X100 Pro is a flagship smartphone that offers exceptional photography capabilities and premium features.",
     "image": "https://fdn2.gsmarena.com/vv/pics/vivo/vivo-x100-pro-1.jpg",
     "name": "Vivo X100 Pro",
     "availability": true,
@@ -91,6 +101,7 @@
   },
   {
     "id": 11,
+    "discription": "The Oppo Find X7 Ultra is a flagship smartphone that combines innovative design with powerful performance.",
     "image": "https://fdn2.gsmarena.com/vv/pics/oppo/oppo-find-x7-ultra-1.jpg",
     "name": "Oppo Find X7 Ultra",
     "availability": true,
@@ -100,6 +111,7 @@
   },
   {
     "id": 12,
+    "discription": "The Realme GT 5 Pro is a premium smartphone that offers high performance and advanced features at an affordable price.",
     "image": "https://fdn2.gsmarena.com/vv/pics/realme/realme-gt5-pro-1.jpg",
     "name": "Realme GT 5 Pro",
     "availability": true,
@@ -109,6 +121,7 @@
   },
   {
     "id": 13,
+    "discription": "The Nothing Phone (2) is a premium smartphone that offers a unique design and advanced features.",
     "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg",
     "name": "Nothing Phone (2)",
     "availability": true,
@@ -118,6 +131,7 @@
   },
   {
     "id": 14,
+    "discription": "The iQOO 12 is a performance smartphone that delivers exceptional gaming and multitasking capabilities.",
     "image": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg",
     "name": "iQOO 12",
     "availability": true,
@@ -127,6 +141,7 @@
   },
   {
     "id": 15,
+    "discription": "The Motorola Edge 40 Pro is a premium smartphone that offers a unique design and advanced features.",
     "image": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg",
     "name": "Motorola Edge 40 Pro",
     "availability": false,
@@ -136,6 +151,7 @@
   },
   {
     "id": 16,
+    "discription": "The Samsung Galaxy S23 FE is a mid-range smartphone that offers a great balance of performance and features.",
     "image": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s23-fe-1.jpg",
     "name": "Samsung Galaxy S23 FE",
     "availability": true,
@@ -145,6 +161,7 @@
   },
   {
     "id": 17,
+    "discription": "The iPhone 14 is a premium smartphone that offers a great balance of performance and features.",
     "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-1.jpg",
     "name": "iPhone 14",
     "availability": true,
@@ -154,6 +171,7 @@
   },
   {
     "id": 18,
+    "discription": "The Redmi Note 13 Pro+ is a mid-range smartphone that offers a great balance of performance and features.",
     "image": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg",
     "name": "Redmi Note 13 Pro+",
     "availability": true,
@@ -163,6 +181,7 @@
   },
   {
     "id": 19,
+    "discription": "The OnePlus Nord CE 3 is a mid-range smartphone that offers a great balance of performance and features.",
     "image": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg",
     "name": "OnePlus Nord CE 3",
     "availability": true,
@@ -172,6 +191,7 @@
   },
   {
     "id": 20,
+    "discription": "The Google Pixel 7a is a mid-range smartphone that offers a great balance of performance and features.",
     "image": "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-7a-1.jpg",
     "name": "Google Pixel 7a",
     "availability": true,

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="d-flex">
-    <div class="w-25">
+    <div class="w-25" *ngIf="showMenu">
       <ol class="list-group list-group-numbered">
         <li class="list-group-item"><a routerLink="/todo">TO DO</a></li>
         <li class="list-group-item">
@@ -11,7 +11,7 @@
         </li>
       </ol>
     </div>
-    <div class="w-75">
+    <div [class.w-75]="showMenu" [class.w-100]="!showMenu">
       <!-- <ng-container *ngIf="this.currentView === 'todo'">
         <app-to-do
           [cardTitle]="setCardTitle"

@@ -1,1 +1,57 @@
-<p>inventory-form works!</p>
+<div class="card">
+  <div class="card-header text-center">
+    <span *ngIf="productID">Update Product Information</span>
+    <span *ngIf="!productID">Add New Product Information</span>
+  </div>
+  <div class="card-body">
+    <form [formGroup]="inventoryFormGroup">
+      <div class="mb-3">
+        <label class="form-label">Product Name</label>
+        <input class="form-control" type="text" formControlName="name" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Product Image</label>
+        <!-- <input class="form-control" type="file" formControlName="image" /> -->
+        <input type="file" (change)="onImageChange($event)" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Product Price</label>
+        <input class="form-control" type="number" formControlName="price" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Product Category</label>
+        <input class="form-control" type="text" formControlName="category" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Product Manufacturer</label>
+        <input
+          class="form-control"
+          type="text"
+          formControlName="manufacturer"
+        />
+      </div>
+      <div class="mb-4">
+        <label class="form-label">Product Description</label>
+        <textarea class="form-control" formControlName="discription"></textarea>
+      </div>
+      <div class="mb-3 d-flex justify-content-center gap-3">
+        <button
+          type="submit"
+          *ngIf="!productID"
+          class="btn btn-primary"
+          (click)="addNewProduct()"
+        >
+          Save
+        </button>
+        <button
+          type="button"
+          *ngIf="productID"
+          class="btn btn-outline-primary"
+          (click)="updateProduct()"
+        >
+          Update
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterLink } from '@angular/router';
+import {
+  RouterOutlet,
+  RouterLink,
+  Router,
+  NavigationEnd,
+} from '@angular/router';
 import { ToDoComponent } from './components/to-do/to-do.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -28,6 +33,16 @@ export class AppComponent {
   title = 'to-do';
 
   currentView: 'todo' | 'register' = 'todo';
+
+  showMenu = true;
+
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.showMenu = event.url === '/';
+      }
+    });
+  }
 
   showAndHideToDo() {
     this.ToggleToDoList = !this.ToggleToDoList;

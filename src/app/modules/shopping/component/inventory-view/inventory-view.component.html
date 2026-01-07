@@ -39,7 +39,12 @@
       <td>{{ product.price | currency : "INR" }}</td>
       <td>
         <button class="btn btn-sm btn-outline-warning me-2">View</button>
-        <button class="btn btn-sm btn-outline-primary me-2">Edit</button>
+        <button
+          class="btn btn-sm btn-outline-primary me-2"
+          (click)="navigateToEdit(product.id)"
+        >
+          Edit
+        </button>
         <button class="btn btn-sm btn-outline-danger me-2">Delete</button>
       </td>
     </tr>

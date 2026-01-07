@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ShoppingApiService } from '../services/shopping-api.service';
 import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inventory-view',
@@ -12,7 +13,8 @@ import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
 export class InventoryViewComponent implements OnInit {
   productdataSoucrce: any[] = [];
 
-  constructor(private api: ShoppingApiService) {}
+  imagePreview: string | null = null;
+  constructor(private api: ShoppingApiService, private router: Router) {}
 
   ngOnInit(): void {
     this.api.getProducts().subscribe({
@@ -24,5 +26,9 @@ export class InventoryViewComponent implements OnInit {
         console.error('Failed to load products', err);
       },
     });
+  }
+
+  navigateToEdit(id: any) {
+    this.router.navigate(['shopping', 'inventory', 'form', id]);
   }
 }

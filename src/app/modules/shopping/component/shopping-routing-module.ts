@@ -18,6 +18,7 @@ export const routes: Routes = [
     component: InventoryComponent,
     children: [
       { path: 'form', component: InventoryFormComponent },
+      { path: 'form/:id', component: InventoryFormComponent },
       { path: 'view', component: InventoryViewComponent },
     ],
   },
