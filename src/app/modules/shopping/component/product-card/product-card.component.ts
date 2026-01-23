@@ -30,18 +30,20 @@ export class ProductCardComponent {
   @Input() product: any;
 
   // 👇 quantity
-  quantity: number = 1;
+  quantity: number = 0;
 
   // 👇 send quantity change to parent if needed
   @Output() quantityChange = new EventEmitter<number>();
 
   increaseQty() {
-    this.quantity++;
-    this.quantityChange.emit(this.quantity);
+    if (this.quantity < 5) {
+      this.quantity++;
+      this.quantityChange.emit(this.quantity);
+    }
   }
 
   decreaseQty() {
-    if (this.quantity > 1) {
+    if (this.quantity > 0) {
       this.quantity--;
       this.quantityChange.emit(this.quantity);
     }
